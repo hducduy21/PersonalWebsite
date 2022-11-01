@@ -1,0 +1,46 @@
+$s-width: 480px;
+$m-width: 830px;
+$l-width: 1000px;
+$xl-width: 1180px;
+.wrapper {
+    height: 60rem;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.leftbar {
+    height: 100%;
+    width: 23%;
+}
+.rightbar {
+    height: 100%;
+    width: 75%;
+    background-color: coral;
+}
+@media (max-width: $xl-width) {
+    .wrapper {
+        width: 85%;
+    }
+}
+@media (max-width: $l-width) {
+    .wrapper {
+        width: 95%;
+    }
+}
+@media (max-width: $m-width) {
+    .wrapper {
+        width: 100%;
+    }
+    .leftbar {
+        display: none;
+    }
+    .rightbar {
+        width: 100%;
+    }
+}
+@media (max-width: $s-width) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+}
