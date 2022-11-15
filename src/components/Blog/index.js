@@ -5,7 +5,7 @@ const cx = classNames.bind(styles);
 
 function Blog() {
     return (
-        <div className={cx('wrapper')}>
+        <div className={cx('wrapper')} id="blog">
             <h1 className={cx('title')}>Blogs</h1>
             <div className={cx('content')}>
                 <Slider></Slider>

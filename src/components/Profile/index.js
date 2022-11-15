@@ -5,7 +5,7 @@ const cx = classNames.bind(styles);
 
 function Profile() {
     return (
-        <div className={cx('wrapper', 'rightBarItem')}>
+        <div className={cx('wrapper', 'rightBarItem')} id="profile">
             <h1 className={cx('title')}>Somthing about me</h1>
             <div className={cx('content')}>
                 <HistoryEvent date="21/02/2002" title={'My jorney started here'}></HistoryEvent>

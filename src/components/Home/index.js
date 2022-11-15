@@ -4,7 +4,7 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 function Home() {
     return (
-        <div className={cx('Wrapper')}>
+        <div className={cx('Wrapper')} id="home">
             <img className={cx('logo')} src={images.logo} alt=""></img>
             <img className={cx('background')} src={images.background} alt=""></img>
             <div className={cx('content')}>

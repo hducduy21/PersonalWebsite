@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 function Project() {
     return (
-        <div className={cx('wrapper')}>
+        <div className={cx('wrapper')} id="project">
             <h1 className={cx('title')}>My Projects</h1>
             <div className={cx('content')}>
                 <ProjectItem img={img.projectItem1} title="Digital wallet"></ProjectItem>
