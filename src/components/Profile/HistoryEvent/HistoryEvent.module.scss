@@ -1,0 +1,35 @@
+$s-width: 480px;
+.wrapper {
+    .circle {
+        position: absolute;
+        color: #ffffff;
+        height: 10px;
+        left: 26px;
+    }
+    .eventInfo {
+        margin-bottom: 20px;
+        .eventDate {
+            margin-left: 10px;
+            display: inline-block;
+            width: 130px;
+        }
+        .eventTitle {
+            display: inline-block;
+        }
+    }
+    .eventContent {
+        display: block;
+        height: 100px;
+        width: 100%;
+    }
+    @media (max-width: $s-width) {
+        .circle {
+            left: 6px;
+        }
+        .eventInfo {
+            .eventDate {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

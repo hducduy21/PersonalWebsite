@@ -1,0 +1,40 @@
+$s-width: 480px;
+$m-width: 830px;
+$l-width: 1000px;
+$xl-width: 1180px;
+.wrapper {
+    background: var(--background-gradient-2);
+    height: 600px;
+    min-height: 550px;
+    border-radius: 25px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    overflow: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+    position: relative;
+
+    .title {
+        margin-left: 30px;
+        margin-bottom: 20px;
+        @media (max-width: $s-width) {
+            margin-left: 10px;
+        }
+    }
+    .content {
+        width: 100%;
+        height: 540px;
+        padding: 0 30px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: $s-width) {
+            padding: 0;
+        }
+    }
+    @media (max-width: $s-width) {
+        padding: 20px 0 0 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+}

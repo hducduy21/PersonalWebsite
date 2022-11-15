@@ -1,0 +1,43 @@
+$s-width: 480px;
+$m-width: 830px;
+$l-width: 1000px;
+$xl-width: 1180px;
+.wrapper {
+    background: var(--background-gradient-2);
+    min-height: 400px;
+    border-radius: 25px;
+    position: relative;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    overflow: hidden;
+    padding: 30px 30px 10px 30px;
+    margin-top: 50px;
+
+    .title {
+        line-height: 3rem;
+        margin-bottom: 25px;
+    }
+    .content {
+        display: block;
+        width: 100%;
+        font-size: 1.9rem;
+        line-height: 20px;
+        .Last {
+            margin-left: 5px;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            display: inline;
+            clear: both;
+            background-color: white;
+            height: 100%;
+            width: 2px;
+        }
+    }
+    @media (max-width: $s-width) {
+        padding: 5px 10px 5px 10px;
+        width: 100%;
+        border-radius: 0px;
+    }
+}

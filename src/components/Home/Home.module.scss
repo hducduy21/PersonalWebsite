@@ -1,0 +1,69 @@
+$s-width: 480px;
+$m-width: 830px;
+$l-width: 1000px;
+$xl-width: 1180px;
+.Wrapper {
+    width: 100%;
+    height: 100%;
+    background: var(--background-gradient-2);
+    border-radius: 25px;
+    position: relative;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    z-index: 2;
+    overflow: hidden;
+    padding: 10px 0 10px 30px;
+
+    .logo {
+        height: 40px;
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+    .background {
+        position: absolute;
+        height: 550px;
+        bottom: -30px;
+        right: -150px;
+        opacity: 0.325;
+        z-index: 1;
+    }
+    .content {
+        width: 65%;
+
+        margin-top: 100px;
+        color: transparent;
+        background-image: var(--url-text-background);
+        background-size: 150%;
+        -webkit-background-clip: text;
+        animation: animate 3s ease-in-out alternate infinite;
+        h1 {
+            font-family: 'Fira Sans Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 6rem;
+            line-height: 6rem;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 2rem;
+            font-weight: 400;
+        }
+        @media (max-width: $s-width) {
+            width: 100%;
+            margin-top: 10px;
+        }
+        @keyframes animate {
+            from {
+                background-position: center 40%;
+            }
+            to {
+                background-position: center 60%;
+            }
+        }
+    }
+    @media (max-width: $s-width) {
+        padding: 5px 10px 5px 10px;
+        width: 100%;
+        border-radius: 0px;
+    }
+}
