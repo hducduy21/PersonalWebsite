@@ -99,10 +99,10 @@ function Sidebar() {
                 </table>
             </div>
             <div className={cx('menu-social')}>
-                <Icon ic={faFacebook} Size="xl" />
-                <Icon ic={faInstagram} Size="xl" />
-                <Icon ic={faLinkedin} Size="xl" />
-                <Icon ic={faGithub} Size="xl" />
+                <Icon ic={faFacebook} Size="xl" to="https://www.facebook.com/hducduy21" />
+                <Icon ic={faInstagram} Size="xl" to="" />
+                <Icon ic={faLinkedin} Size="xl" to="https://www.linkedin.com/in/hducduy21/" />
+                <Icon ic={faGithub} Size="xl" to="https://github.com/hducduy21" />
             </div>
         </div>
     );

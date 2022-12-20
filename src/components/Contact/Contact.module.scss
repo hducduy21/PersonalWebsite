@@ -23,14 +23,21 @@ $xl-width: 1180px;
             display: flex;
             justify-content: space-evenly;
             margin: 20px 0;
+
+            & > * {
+                transition: opacity ease 0.2s;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
         }
         .sendMess {
             textarea {
                 width: 100%;
-                height: 100px;
+                height: 120px;
                 display: block;
             }
-            button {
+            .sendSubmit {
                 background-color: transparent;
                 color: #ffffff;
                 border: none;

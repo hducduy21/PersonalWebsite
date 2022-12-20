@@ -8,12 +8,12 @@ const cx = classNames.bind(styles);
 function Slider() {
     const [slide, setSlide] = useState(0);
     const curr = data[slide];
-    console.log('slide: ' + slide);
+
     // const changeSlide = (e) => {
     //     console.log(e.target.value);
     // };
     return (
-        <div className={cx('wrapper')}>
+        <div className={cx('wrapper', 'fade')}>
             <div className={cx('content')}>
                 <h1 className={cx('title')}>{curr.title}</h1>
                 <p className={cx('text')}>{curr.text}</p>

@@ -17,6 +17,12 @@ $xl-width: 1180px;
         line-height: 3rem;
         margin-bottom: 25px;
     }
+    table {
+        width: 100%;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
     .content {
         display: block;
         width: 100%;
@@ -39,5 +45,15 @@ $xl-width: 1180px;
         padding: 5px 10px 5px 10px;
         width: 100%;
         border-radius: 0px;
+        table {
+            font-size: 13px;
+            line-height: 15px;
+        }
+    }
+    @media (max-width: $l-width) {
+        table {
+            font-size: 17px;
+            line-height: 23px;
+        }
     }
 }

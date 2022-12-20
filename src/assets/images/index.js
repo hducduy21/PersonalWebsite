@@ -1,5 +1,5 @@
 const images = {
-    circle_logo: require('~/assets/images/duySquare.jpg') ,
+    circle_logo: require('~/assets/images/duySquare.jpg'),
     home: require('~/assets/images/page/home1.png'),
     profile: require('~/assets/images/page/profile1.png'),
     project: require('~/assets/images/page/project1.png'),
