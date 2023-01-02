@@ -7,6 +7,7 @@ import Project from '~/components/Project';
 import Blog from '~/components/Blog';
 import Contact from '~/components/Contact';
 import images from '~/assets/images';
+import Languages from '~/components/Language';
 
 const cx = classNames.bind(styles);
 function scrollT() {
@@ -33,6 +34,7 @@ function scrollT() {
 function Layout() {
     return (
         <div className={cx('wrapper')}>
+            <Languages />
             <div className={cx('leftbar')}>
                 <Sidebar></Sidebar>
             </div>

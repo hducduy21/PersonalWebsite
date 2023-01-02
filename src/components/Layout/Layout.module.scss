@@ -11,10 +11,12 @@ $xl-width: 1180px;
 .leftbar {
     height: 100%;
     width: 23%;
+    z-index: 1;
 }
 .rightbar {
     height: 100%;
     width: 75%;
+    z-index: 1;
     overflow: scroll;
     border-radius: 25px;
     &::-webkit-scrollbar {
