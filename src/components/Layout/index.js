@@ -31,6 +31,7 @@ function scrollT() {
         document.getElementById('imgHome').setAttribute('src', images.home1);
     }
 }
+
 function Layout() {
     return (
         <div className={cx('wrapper')}>

@@ -17,6 +17,7 @@ const customStyles = {
         color: '#000000',
         padding: 0,
         marginTop: '10px',
+        zIndex: 999,
     },
     overlay: {
         position: 'fixed',
@@ -25,6 +26,7 @@ const customStyles = {
         right: 0,
         bottom: 0,
         backgroundColor: 'rgba(209, 209, 209,0.4)',
+        zIndex: 999,
     },
 };
 Modal.setAppElement('#root');

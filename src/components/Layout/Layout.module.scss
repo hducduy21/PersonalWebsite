@@ -16,9 +16,10 @@ $xl-width: 1180px;
 .rightbar {
     height: 100%;
     width: 75%;
-    z-index: 1;
     overflow: scroll;
     border-radius: 25px;
+    z-index: 1;
+
     &::-webkit-scrollbar {
         display: none;
     }
